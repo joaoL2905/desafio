@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página de tecnologia</title>
+</head>
+<body>
+
+    <h1>Bem-vindo ao mundo da tecnologia!</h1>
+
+    <p class="mensagem">
+        Clique no botão para descobrir uma curiosidade!
+    </p>
+
+    <button class="botao">Mostrar curiosidade</button>
+
+    <script>
+        const botao = document.querySelector(".botao");
+        const mensagem = document.querySelector(".mensagem");
+
+        function mostrarMensagem() {
+            mensagem.textContent = "Você sabia? A internet conecta milhões de pessoas ao redor do mundo!";
+        }
+
+        botao.addEventListener("click", mostrarMensagem);
+    </script>
+
+</body>
+</html>
